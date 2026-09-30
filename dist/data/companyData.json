@@ -1,16 +1,16 @@
 {
   "company": {
-    "legalName": "APEX GRAVURES PRIVATE LIMITED",
-    "shortName": "APEX GRAVURES",
+    "legalName": "[COMPANY NAME] PRIVATE LIMITED",
+    "shortName": "[COMPANY NAME]",
     "brandTitleMain": "APEX",
     "brandTitleSub": "GRAVURES PRIVATE LIMITED",
-    "cin": "U32900TG2024PTC000000",
-    "roc": "RoC Hyderabad (Telangana)",
+    "cin": "U00000XX2024PTC000000",
+    "roc": "RoC [State / Region]",
     "incorporationDate": "May 9, 2024",
-    "entityStatus": "Active Private Limited Entity (RoC Hyderabad)",
+    "entityStatus": "Active Private Limited Entity (RoC [State / Region])",
     "tagline": "Precision Behind Every Impression.",
     "description": "Specialized in precision rotogravure cylinder manufacturing, engraving solutions, and high-performance flexible packaging services.",
-    "logo": "harshita web img/file_00000000f5dc81fa9ea6df602bcea912.png",
+    "logo": "svg/brand-logo.svg",
     "bottomTagline": "Rotogravure • Cylinder Manufacturing • Packaging",
     "bottomCommitment": "Let’s build better packaging together.",
     "copyrightYear": "2024–2026"
@@ -24,36 +24,36 @@
     { "label": "Contact", "href": "#contact" }
   ],
   "contact": {
-    "primaryPhone": "+91 98000 00000",
-    "primaryPhoneLink": "tel:+919800000000",
-    "primaryEmail": "contact@apexgravures.com",
-    "primaryEmailLink": "mailto:contact@apexgravures.com",
+    "primaryPhone": "+91 00000 00000",
+    "primaryPhoneLink": "tel:+910000000000",
+    "primaryEmail": "contact@companydomain.com",
+    "primaryEmailLink": "mailto:contact@companydomain.com",
     "registeredOffice": {
-      "line1": "Plot 42, Phase-II,",
-      "line2": "Industrial Estate, Sanathnagar,",
-      "city": "Hyderabad",
-      "state": "Telangana",
-      "postalCode": "500001",
-      "country": "India",
-      "full": "Plot 42, Phase-II, Industrial Estate, Sanathnagar, Hyderabad, Telangana – 500001, India"
+      "line1": "Plot No. 00, Phase-I, Industrial Corridor,",
+      "line2": "[Industrial Zone Name], [City Name],",
+      "city": "[City Name]",
+      "state": "[State Name]",
+      "postalCode": "[PIN Code]",
+      "country": "[Country]",
+      "full": "Plot No. 00, Phase-I, Industrial Corridor, [Industrial Zone Name], [City Name], [State Name] – [PIN Code], [Country]"
     },
-    "whatsappNumber": "919800000000",
-    "whatsappMessage": "Hello Apex Gravures, I would like to inquire about your rotogravure cylinders and packaging solutions."
+    "whatsappNumber": "910000000000",
+    "whatsappMessage": "Hello [Company Name], I would like to inquire about your rotogravure cylinders and packaging solutions."
   },
   "socialLinks": [
-    { "name": "Phone", "icon": "phone", "url": "tel:+919800000000" },
-    { "name": "Email", "icon": "email", "url": "mailto:contact@apexgravures.com" },
-    { "name": "LinkedIn", "icon": "linkedin", "url": "https://linkedin.com/company/apexgravures" },
-    { "name": "X", "icon": "x", "url": "https://x.com/apexgravures" },
-    { "name": "Instagram", "icon": "instagram", "url": "https://instagram.com/apexgravures" },
-    { "name": "YouTube", "icon": "youtube", "url": "https://youtube.com/@apexgravures" }
+    { "name": "Phone", "icon": "phone", "url": "tel:+910000000000" },
+    { "name": "Email", "icon": "email", "url": "mailto:contact@companydomain.com" },
+    { "name": "LinkedIn", "icon": "linkedin", "url": "https://linkedin.com/company/companydomain" },
+    { "name": "X", "icon": "x", "url": "https://x.com/companydomain" },
+    { "name": "Instagram", "icon": "instagram", "url": "https://instagram.com/companydomain" },
+    { "name": "YouTube", "icon": "youtube", "url": "https://youtube.com/@companydomain" }
   ],
   "map": {
     "lat": 17.4560,
     "lng": 78.4380,
     "zoom": 16,
-    "locationLabel": "APEX GRAVURES PRIVATE LIMITED",
-    "addressLabel": "Industrial Estate, Hyderabad, Telangana",
+    "locationLabel": "[COMPANY NAME] PRIVATE LIMITED",
+    "addressLabel": "[Industrial Zone], [City], [State]",
     "satelliteTilesUrl": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     "satelliteAttribution": "Tiles &copy; Esri &mdash; Satellite Imagery"
   },
@@ -71,7 +71,7 @@
     "bannerImage": "harshita web img/file_000000008d4481faa6fd0d31f44ebd27.png"
   },
   "about": {
-    "eyebrow": "ABOUT APEX GRAVURES",
+    "eyebrow": "ABOUT OUR COMPANY",
     "heading": "Precision Behind Every Impression.",
     "description": "We focus on engineering high-quality rotogravure cylinders and engraving solutions that help packaging achieve sharp detail, rich reproduction and consistent print performance.",
     "image": "harshita web img/file_0000000016d081faaa427110c69feaad.png"
@@ -209,9 +209,9 @@
     "description": "Operating modern manufacturing infrastructure equipped with advanced rotogravure cylinder engraving technology to ensure premium quality flexible packaging solutions.",
     "image": "harshita web img/file_000000009a3081fabf57928df05c5ddd.png",
     "block1Label": "REGISTERED OFFICE & HQ",
-    "block1Value": "Plot 42, Phase-II, Industrial Estate,<br>Sanathnagar, Hyderabad, Telangana 500001",
+    "block1Value": "Plot No. 00, Phase-I, Industrial Corridor,<br>[Industrial Zone Name], [City Name], [State Name] [PIN Code]",
     "block2Label": "CORPORATE IDENTITY (CIN)",
-    "block2Value": "U32900TG2024PTC000000<span style=\"display:block; font-size: 0.8rem; font-weight: 500; color: #6B665E; margin-top: 4px;\">Active Private Limited Entity (RoC Hyderabad)</span>"
+    "block2Value": "U00000XX2024PTC000000<span style=\"display:block; font-size: 0.8rem; font-weight: 500; color: #6B665E; margin-top: 4px;\">Active Private Limited Entity (RoC [State / Region])</span>"
   },
   "footer": {
     "services": [
