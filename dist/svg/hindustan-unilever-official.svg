@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 110" width="380" height="110" fill="none">
+  <g fill="#1F36C7">
+    <!-- Unilever Iconic Stylized U Emblem -->
+    <g transform="translate(8, 6) scale(0.95)">
+      <!-- Left Stem Elements (Sun, Palm, Plant, Fish, Waves) -->
+      <path d="M26 6c-7 0-13 4-15 10 2-1 5-2 8-2 7 0 12 5 12 12 0 4-2 8-5 10 5 1 9-2 10-7 1-6-4-12-10-13z"/>
+      <circle cx="16" cy="18" r="3.5"/>
+      <path d="M12 28c-4 3-7 8-7 14 3-2 7-3 11-1 3 1 5 4 5 7 2-4 2-8 0-11-2-4-5-7-9-9z"/>
+      <path d="M8 49c-3 4-5 9-5 15 4-2 8-2 12 1 2 2 3 5 3 8 3-4 3-9 1-13-2-5-6-9-11-11z"/>
+      <path d="M5 71c-1 5 0 11 3 16 3-3 7-4 11-2 3 2 4 5 4 8 3-4 3-9 0-13-2-4-5-7-9-9-3-1-6-1-9 0z"/>
+      <path d="M14 91c4 4 9 7 15 8 1-4 4-7 8-8 4-1 8 0 11 2-2-4-5-7-9-8-5-1-11 0-15 3-4 2-7 4-10 3z"/>
+      <!-- Bottom Arc of U -->
+      <path d="M37 99c7 2 15 2 22 0-3-3-4-7-3-11 1-4 4-7 8-8-5-1-11 1-15 4-5 4-9 9-12 15z"/>
+      <!-- Internal decorative motif: drop & sparkle -->
+      <path d="M32 60c-2-4-2-9 1-13 2 3 5 5 9 5 2 0 5-1 7-3-1 5-4 9-8 10-3 1-7 0-9-1z"/>
+      <path d="M28 42c0-4 2-7 5-9 1 3 4 5 7 5 3 0 5-2 6-4-1 4-3 7-6 8-4 1-9 0-12 0z"/>
+      <circle cx="34" cy="74" r="3"/>
+      <circle cx="23" cy="38" r="2.5"/>
+
+      <!-- Right Stem Elements (Heart, Leaf, Sparkle, Bird, Swirl) -->
+      <path d="M70 6c7 0 13 4 15 10-2-1-5-2-8-2-7 0-12 5-12 12 0 4 2 8 5 10-5 1-9-2-10-7-1-6 4-12 10-13z"/>
+      <circle cx="80" cy="18" r="3.5"/>
+      <path d="M84 28c4 3 7 8 7 14-3-2-7-3-11-1-3 1-5 4-5 7-2-4-2-8 0-11 2-4 5-7 9-9z"/>
+      <path d="M88 49c3 4 5 9 5 15-4-2-8-2-12 1-2 2-3 5-3 8-3-4-3-9-1-13 2-5 6-9 11-11z"/>
+      <path d="M91 71c1 5 0 11-3 16-3-3-7-4-11-2-3 2-4 5-4 8-3-4-3-9 0-13 2-4 5-7 9-9 3-1 6-1 9 0z"/>
+      <path d="M82 91c-4 4-9 7-15 8-1-4-4-7-8-8-4-1-8 0-11 2 2-4 5-7 9-8 5-1 11 0 15 3 4 2 7 4 10 3z"/>
+      <!-- Right internal elements -->
+      <path d="M64 60c2-4 2-9-1-13-2 3-5 5-9 5-2 0-5-1-7-3 1 5 4 9 8 10 3 1 7 0 9-1z"/>
+      <path d="M68 42c0-4-2-7-5-9-1 3-4 5-7 5-3 0-5-2-6-4 1 4 3 7 6 8 4 1 9 0 12 0z"/>
+      <circle cx="62" cy="74" r="3"/>
+      <circle cx="73" cy="38" r="2.5"/>
+    </g>
+
+    <!-- Typography: Hindustan Unilever Limited -->
+    <g transform="translate(112, 16)">
+      <!-- Line 1: HINDUSTAN -->
+      <text x="0" y="28" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="800" font-size="25" fill="#1F36C7" letter-spacing="0.5">HINDUSTAN</text>
+      <!-- Line 2: UNILEVER -->
+      <text x="0" y="56" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="800" font-size="25" fill="#1F36C7" letter-spacing="0.5">UNILEVER</text>
+      <!-- Line 3: LIMITED -->
+      <text x="1" y="76" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="600" font-size="12" fill="#4B5563" letter-spacing="3.5">LIMITED</text>
+    </g>
+  </g>
+</svg>

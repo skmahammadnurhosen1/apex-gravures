@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60" fill="none">
+  <!-- Parle Signature Red Background Capsule/Pill -->
+  <rect x="2" y="4" width="196" height="52" rx="26" fill="#E31B23"/>
+  <!-- White Inner Border Accent -->
+  <rect x="5" y="7" width="190" height="46" rx="23" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.95"/>
+  <!-- Bold Clean Parle Typography -->
+  <g fill="#FFFFFF">
+    <!-- P -->
+    <path d="M38 18 H52 C58.5 18 63 21.5 63 27 C63 32.5 58.5 36 52 36 H45 V42 H38 Z M45 23.5 V30.5 H51.5 C54 30.5 56 29.2 56 27 C56 24.8 54 23.5 51.5 23.5 Z"/>
+    <!-- A -->
+    <path d="M72 42 L80.5 18 H88 L96.5 42 H89.5 L88 37 H79.5 L78 42 Z M81 32 H86.5 L84 23.5 Z"/>
+    <!-- R -->
+    <path d="M104 18 H118 C124.5 18 129 21.5 129 26.5 C129 30.5 126 33.2 121.5 34.2 L129.5 42 H121.5 L114.5 35 H111 V42 H104 Z M111 23.5 V29.5 H117 C120 29.5 122 28.3 122 26.5 C122 24.7 120 23.5 117 23.5 Z"/>
+    <!-- L -->
+    <path d="M137 18 H144 V36.5 H156 V42 H137 Z"/>
+    <!-- E -->
+    <path d="M164 18 H182 V23.5 H171 V27.5 H180 V32.5 H171 V36.5 H182 V42 H164 Z"/>
+  </g>
+</svg>

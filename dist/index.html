@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[COMPANY NAME] PRIVATE LIMITED | Precision Rotogravure Cylinders &amp; Packaging</title>
+  <meta name="description" content="[Company Name] Private Limited (CIN: U00000XX2024PTC000000) - Advanced rotogravure cylinder and precision engraving solutions engineered for high-quality flexible packaging. Registered Office in [City], [State].">
+  <link rel="canonical" href="https://demo.companydomain.com/">
+
+  <!-- Schema.org JSON-LD Structured Corporate Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "[COMPANY NAME] PRIVATE LIMITED",
+    "legalName": "[Company Name] Private Limited",
+    "taxID": "U00000XX2024PTC000000",
+    "url": "https://demo.companydomain.com",
+    "logo": "https://demo.companydomain.com/svg/brand-logo.svg",
+    "telephone": "+910000000000",
+    "email": "contact@companydomain.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot No. 00, Phase-I, Industrial Corridor, [Industrial Zone Name]",
+      "addressLocality": "[City Name]",
+      "addressRegion": "[State Name]",
+      "postalCode": "[PIN Code]",
+      "addressCountry": "[Country]"
+    }
+  }
+  </script>
+  
+  <!-- Minimalist Vector SVG Brand Favicon -->
+  <link rel="icon" type="image/svg+xml" href="svg/brand-logo.svg">
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS for Interactive Satellite Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+  <!-- Master Stylesheet with Cache Buster -->
+  <link rel="stylesheet" href="css/style.css?v=20260930_2">
+
+  <!-- Critical Mobile, Modal & Council Layout Styles (Guarantees instant rendering even on cached browsers) -->
+  <style>
+    /* 1. Modal must NEVER be visible in static page flow */
+    #terms-modal {
+      display: none;
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      height: 100dvh !important;
+      background: rgba(0, 0, 0, 0.86) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      z-index: 999999 !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 18px !important;
+      opacity: 0;
+      transition: opacity 0.25s ease !important;
+    }
+    #terms-modal.open {
+      opacity: 1 !important;
+    }
+    .modal-content-card {
+      background: #141413 !important;
+      border: 1.5px solid #DFB76C !important;
+      border-radius: 16px !important;
+      max-width: 440px !important;
+      width: 100% !important;
+      padding: 24px !important;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 30px rgba(223, 183, 108, 0.25) !important;
+      transform: translateY(12px) scale(0.97);
+      transition: transform 0.25s ease !important;
+      color: #FFFFFF !important;
+    }
+    #terms-modal.open .modal-content-card {
+      transform: translateY(0) scale(1) !important;
+    }
+    .modal-quote-box {
+      background: #1A1A18 !important;
+      border-left: 3px solid #DFB76C !important;
+      border-radius: 8px !important;
+      padding: 16px 18px !important;
+      margin: 16px 0 !important;
+    }
+    .modal-message {
+      font-size: 0.98rem !important;
+      line-height: 1.55 !important;
+      color: #F4F1E9 !important;
+      font-style: italic !important;
+      margin: 0 !important;
+    }
+    .modal-badge {
+      display: flex !important;
+      flex-direction: column !important;
+      font-size: 0.72rem !important;
+      color: #DFB76C !important;
+      font-weight: 600 !important;
+      margin-bottom: 20px !important;
+      letter-spacing: 0.04em !important;
+    }
+    .modal-badge .badge-sub {
+      color: #A09A8F !important;
+      font-size: 0.68rem !important;
+      font-weight: 400 !important;
+      margin-top: 2px !important;
+    }
+    .modal-btn-confirm {
+      background: linear-gradient(135deg, #DFB76C, #B7863B) !important;
+      color: #0E0E0D !important;
+      border: none !important;
+      padding: 11px 24px !important;
+      font-size: 0.86rem !important;
+      font-weight: 700 !important;
+      border-radius: 30px !important;
+      cursor: pointer !important;
+      width: 100% !important;
+      text-align: center !important;
+      letter-spacing: 0.03em !important;
+      box-shadow: 0 4px 16px rgba(183, 134, 59, 0.4) !important;
+      transition: filter 0.2s ease, transform 0.15s ease !important;
+    }
+    .modal-btn-confirm:hover {
+      filter: brightness(1.1) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    /* 2. Council: 2 people per row on mobile */
+    @media (max-width: 768px) {
+      .council-cards-row {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px 12px !important;
+        margin-bottom: 30px !important;
+      }
+      .council-cards-row > .council-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+      }
+      .council-cards-row > .council-card:last-child:nth-child(odd) {
+        grid-column: span 2 !important;
+        max-width: calc(50% - 6px) !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+      }
+      .council-card-name {
+        font-size: 0.85rem !important;
+        padding: 10px 4px !important;
+        line-height: 1.25 !important;
+      }
+    }
+
+    /* 3. Luxury Mobile Drawer */
+    .mobile-nav-drawer {
+      position: fixed !important;
+      top: 0 !important;
+      right: -100% !important;
+      width: 86% !important;
+      max-width: 360px !important;
+      height: 100vh !important;
+      height: 100dvh !important;
+      background: #0E0E0D !important;
+      border-left: 1px solid rgba(223, 183, 108, 0.3) !important;
+      display: flex !important;
+      flex-direction: column !important;
+      z-index: 99999 !important;
+      box-shadow: -15px 0 45px rgba(0, 0, 0, 0.9) !important;
+      transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      overflow-y: auto !important;
+    }
+    .mobile-nav-drawer.open {
+      right: 0 !important;
+    }
+    .mobile-drawer-header {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      padding: 18px 20px !important;
+      background: #141413 !important;
+      border-bottom: 1px solid rgba(223, 183, 108, 0.25) !important;
+    }
+    .mobile-drawer-brand {
+      display: flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+      text-decoration: none !important;
+    }
+    .mobile-drawer-brand .brand-logo-img {
+      height: 36px !important;
+      width: auto !important;
+    }
+    .mobile-drawer-close {
+      width: 34px !important;
+      height: 34px !important;
+      border-radius: 50% !important;
+      background: rgba(255, 255, 255, 0.08) !important;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      color: #DFB76C !important;
+      font-size: 22px !important;
+      line-height: 1 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      cursor: pointer !important;
+      padding: 0 !important;
+      transition: background 0.2s ease, transform 0.15s ease !important;
+    }
+    .mobile-drawer-close:active {
+      transform: scale(0.92) !important;
+    }
+    .mobile-drawer-links {
+      display: flex !important;
+      flex-direction: column !important;
+      padding: 12px 16px !important;
+      gap: 4px !important;
+    }
+    .mobile-nav-link {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      padding: 13px 14px !important;
+      border-radius: 8px !important;
+      color: #F4F1E9 !important;
+      text-decoration: none !important;
+      font-size: 0.98rem !important;
+      font-weight: 500 !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+      transition: background 0.2s ease, color 0.2s ease !important;
+    }
+    .mobile-nav-link:active, .mobile-nav-link:hover {
+      background: rgba(183, 134, 59, 0.12) !important;
+      color: #DFB76C !important;
+    }
+    .nav-link-left {
+      display: flex !important;
+      align-items: center !important;
+      gap: 12px !important;
+    }
+    .nav-num {
+      font-size: 0.72rem !important;
+      color: #B7863B !important;
+      font-weight: 700 !important;
+      font-family: monospace !important;
+    }
+    .nav-link-arrow {
+      color: #DFB76C !important;
+      font-size: 1rem !important;
+      opacity: 0.65 !important;
+    }
+    .mobile-drawer-actions {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 10px !important;
+      padding: 14px 16px !important;
+      margin-top: auto !important;
+    }
+    .drawer-action-btn {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 10px !important;
+      padding: 11px 16px !important;
+      border-radius: 8px !important;
+      font-size: 0.84rem !important;
+      font-weight: 600 !important;
+      text-decoration: none !important;
+    }
+    .drawer-btn-phone {
+      background: rgba(183, 134, 59, 0.12) !important;
+      border: 1px solid rgba(183, 134, 59, 0.4) !important;
+      color: #DFB76C !important;
+    }
+    .drawer-btn-wa {
+      background: rgba(37, 211, 102, 0.12) !important;
+      border: 1px solid rgba(37, 211, 102, 0.4) !important;
+      color: #25D366 !important;
+    }
+    .mobile-drawer-footer {
+      padding: 14px 16px !important;
+      text-align: center !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+      font-size: 0.72rem !important;
+      color: #8C867A !important;
+      line-height: 1.4 !important;
+    }
+    .drawer-info-line {
+      color: #DFB76C !important;
+      font-weight: 600 !important;
+      margin-bottom: 2px !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =========================================================================
+       Header / Navigation
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="#hero" class="brand-identity" aria-label="Company Home">
+        <img src="svg/brand-logo.svg" alt="Company Logo" class="brand-logo-img">
+        <div class="brand-name-group">
+          <span class="brand-title-main" data-bind="company.brandTitleMain">APEX</span>
+          <span class="brand-title-sub" data-bind="company.brandTitleSub">GRAVURES PRIVATE LIMITED</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" role="navigation" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#capabilities" class="nav-link">Capabilities</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#council" class="nav-link">Council</a>
+        <a href="#facility" class="nav-link">Facility</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line line-1"></span>
+        <span class="hamburger-line line-2"></span>
+        <span class="hamburger-line line-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer & Backdrop -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="#hero" class="mobile-drawer-brand">
+        <img src="svg/brand-logo.svg" alt="Company Logo" class="brand-logo-img">
+        <div class="brand-name-group">
+          <span class="brand-title-main" data-bind="company.brandTitleMain">APEX</span>
+          <span class="brand-title-sub" data-bind="company.brandTitleSub">GRAVURES PRIVATE LIMITED</span>
+        </div>
+      </a>
+      <button type="button" class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close navigation">&times;</button>
+    </div>
+
+    <div class="mobile-drawer-content" style="display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+      <nav class="mobile-drawer-links">
+        <a href="#about" class="mobile-nav-link">
+          <span class="nav-link-left"><span class="nav-num">01</span><span class="nav-title">About Us</span></span>
+          <span class="nav-link-arrow">&rarr;</span>
+        </a>
+        <a href="#capabilities" class="mobile-nav-link">
+          <span class="nav-link-left"><span class="nav-num">02</span><span class="nav-title">Capabilities</span></span>
+          <span class="nav-link-arrow">&rarr;</span>
+        </a>
+        <a href="#projects" class="mobile-nav-link">
+          <span class="nav-link-left"><span class="nav-num">03</span><span class="nav-title">Projects &amp; Gallery</span></span>
+          <span class="nav-link-arrow">&rarr;</span>
+        </a>
+        <a href="#council" class="mobile-nav-link">
+          <span class="nav-link-left"><span class="nav-num">04</span><span class="nav-title">Our Council</span></span>
+          <span class="nav-link-arrow">&rarr;</span>
+        </a>
+        <a href="#facility" class="mobile-nav-link">
+          <span class="nav-link-left"><span class="nav-num">05</span><span class="nav-title">Manufacturing Facility</span></span>
+          <span class="nav-link-arrow">&rarr;</span>
+        </a>
+        <a href="#contact" class="mobile-nav-link">
+          <span class="nav-link-left"><span class="nav-num">06</span><span class="nav-title">Contact &amp; Location</span></span>
+          <span class="nav-link-arrow">&rarr;</span>
+        </a>
+      </nav>
+
+      <div>
+        <div class="mobile-drawer-actions">
+          <a href="tel:+910000000000" class="drawer-action-btn drawer-btn-phone">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span data-bind="contact.primaryPhone">Call Us: +91 00000 00000</span>
+          </a>
+          <a href="https://wa.me/910000000000?text=Hello%20%5BCompany%20Name%5D%2C%20I%20would%20like%20to%20inquire%20about%20your%20rotogravure%20cylinders%20and%20packaging%20solutions." target="_blank" rel="noopener noreferrer" class="drawer-action-btn drawer-btn-wa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <span>WhatsApp Inquiry</span>
+          </a>
+        </div>
+
+        <div class="mobile-drawer-footer">
+          <p class="drawer-info-line" data-bind="company.legalName">[COMPANY NAME] PRIVATE LIMITED</p>
+          <p class="drawer-info-sub" id="drawer-info-sub">CIN: U00000XX2024PTC000000 &bull; [City], [Country]</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =========================================================================
+         1. Hero Section
+         ========================================================================= -->
+    <section id="hero" class="hero-section" aria-label="Hero">
+      <div class="hero-background-wrapper">
+        <img 
+          src="harshita web img/file_00000000c57881faa6b3fdcb92e1a302.png" 
+          alt="High-end industrial packaging environment with gravure cylinder and packaged consumer goods" 
+          class="hero-bg-img"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-eyebrow" data-bind="hero.eyebrow">ROTOGRAVURE CYLINDER MANUFACTURERS &amp; ENGRAVERS</p>
+          <h1 class="hero-title">
+            <span data-bind="hero.headingLine1">Precision Cylinders.</span>
+            <span data-bind="hero.headingLine2">Packaging That Performs.</span>
+          </h1>
+          <p class="hero-description" data-bind="hero.description">
+            Advanced rotogravure cylinder and engraving solutions engineered for high-quality flexible packaging.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#capabilities" class="btn-primary">
+              <span class="btn-desktop-text">Explore Our Capabilities &rarr;</span>
+              <span class="btn-mobile-text">Explore Capabilities &rarr;</span>
+            </a>
+            <a href="#contact" class="btn-secondary">Contact &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         2. Trusted By / Brand Logos Marquee
+         ========================================================================= -->
+    <section class="trusted-section" aria-label="Trusted Brands">
+      <div class="container-wide">
+        <h2 class="trusted-heading" data-bind="trustedBrands.heading">TRUSTED BY PACKAGING &amp; CONSUMER BRANDS</h2>
+      </div>
+
+      <div class="trusted-marquee" aria-label="Trusted Brand Partners">
+        <div class="trusted-marquee-track">
+          <!-- Primary Authentic FMCG & Packaging Brand Set -->
+          <div class="brand-logo-item logo-compact" title="ITC Limited">
+            <img src="svg/itc-limited.svg" alt="ITC Limited" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Nestlé">
+            <img src="svg/nestle-clean.svg" alt="Nestlé" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Britannia">
+            <img src="svg/britannia-industries-logo.svg" alt="Britannia" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Coca-Cola">
+            <img src="svg/coca-cola.svg" alt="Coca-Cola" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="PepsiCo">
+            <img src="svg/pepsico.svg" alt="PepsiCo" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-compact" title="Amul">
+            <img src="svg/amul-2.svg" alt="Amul" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="Mother Dairy">
+            <img src="svg/mother-dairy.svg" alt="Mother Dairy" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Mondelēz International">
+            <img src="svg/mondelez-international-1.svg" alt="Mondelēz International" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Dabur">
+            <img src="svg/dabur.svg" alt="Dabur" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="Hershey's">
+            <img src="svg/hershey-s.svg" alt="Hershey's" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Hindustan Unilever">
+            <img src="svg/hindustan-unilever-official.svg" alt="Hindustan Unilever" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="Kellogg's">
+            <img src="svg/kellogg-s-red.svg" alt="Kellogg's" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="KitKat">
+            <img src="svg/kitkat.svg" alt="KitKat" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-compact" title="Kraft">
+            <img src="svg/kraft.svg" alt="Kraft" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="Oreo">
+            <img src="svg/oreo.svg" alt="Oreo" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="Parle">
+            <img src="svg/parle.svg" alt="Parle" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Perfetti Van Melle">
+            <img src="svg/perfetti-van-melle.svg" alt="Perfetti Van Melle" class="brand-logo-img" loading="lazy">
+          </div>
+
+          <!-- Duplicate Set for Seamless Continuous Infinite Marquee -->
+          <div class="brand-logo-item logo-compact" title="ITC Limited" aria-hidden="true">
+            <img src="svg/itc-limited.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Nestlé" aria-hidden="true">
+            <img src="svg/nestle-clean.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Britannia" aria-hidden="true">
+            <img src="svg/britannia-industries-logo.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Coca-Cola" aria-hidden="true">
+            <img src="svg/coca-cola.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="PepsiCo" aria-hidden="true">
+            <img src="svg/pepsico.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-compact" title="Amul" aria-hidden="true">
+            <img src="svg/amul-2.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="Mother Dairy" aria-hidden="true">
+            <img src="svg/mother-dairy.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Mondelēz International" aria-hidden="true">
+            <img src="svg/mondelez-international-1.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Dabur" aria-hidden="true">
+            <img src="svg/dabur.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="Hershey's" aria-hidden="true">
+            <img src="svg/hershey-s.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Hindustan Unilever" aria-hidden="true">
+            <img src="svg/hindustan-unilever-official.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="Kellogg's" aria-hidden="true">
+            <img src="svg/kellogg-s-red.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="KitKat" aria-hidden="true">
+            <img src="svg/kitkat.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-compact" title="Kraft" aria-hidden="true">
+            <img src="svg/kraft.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="Oreo" aria-hidden="true">
+            <img src="svg/oreo.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-normal" title="Parle" aria-hidden="true">
+            <img src="svg/parle.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+          <div class="brand-logo-item logo-wide" title="Perfetti Van Melle" aria-hidden="true">
+            <img src="svg/perfetti-van-melle.svg" alt="" class="brand-logo-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. About / Introduction
+         ========================================================================= -->
+    <section id="about" class="about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-card">
+            <img 
+              src="harshita web img/file_0000000016d081faaa427110c69feaad.png" 
+              alt="Golden rotogravure engraving cylinder and premium packaging pouch" 
+              class="about-img"
+              loading="lazy"
+            >
+          </div>
+          <div class="about-content">
+            <span class="section-eyebrow" data-bind="about.eyebrow">ABOUT OUR COMPANY</span>
+            <div class="accent-line-gold"></div>
+            <h2 id="about-heading" class="section-title" data-bind="about.heading">Precision Behind Every Impression.</h2>
+            <p class="section-body-text" data-bind="about.description">
+              We focus on engineering high-quality rotogravure cylinders and engraving solutions that help packaging achieve sharp detail, rich reproduction and consistent print performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. Capabilities / Artwork Section
+         ========================================================================= -->
+    <section id="capabilities" class="capabilities-section" aria-labelledby="capabilities-heading">
+      <div class="container-wide">
+        <div class="capabilities-header">
+          <p class="artwork-label">&mdash; Artwork &mdash;</p>
+          <h2 id="capabilities-heading" class="artwork-subheading">FROM CONCEPT TO FINAL PRINT</h2>
+        </div>
+
+        <div class="capabilities-cards-grid">
+          <!-- Card 01 -->
+          <article class="capability-card">
+            <div class="capability-card-img-wrap">
+              <img 
+                src="harshita web img/file_00000000079c82119e225a75ffe66f8c.png" 
+                alt="Digital packaging design artwork preparation on monitor" 
+                class="capability-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="capability-card-body">
+              <h3 class="capability-card-title">01 Packaging Design</h3>
+              <p class="capability-card-desc">
+                From concept to final artwork, we create packaging designs crafted for exceptional gravure reproduction.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 02 -->
+          <article class="capability-card">
+            <div class="capability-card-img-wrap">
+              <img 
+                src="harshita web img/file_0000000073e881fab3392430a5c597f5.png" 
+                alt="Precision engineered polished rotogravure steel cylinder" 
+                class="capability-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="capability-card-body">
+              <h3 class="capability-card-title">02 Precision Cylinders</h3>
+              <p class="capability-card-desc">
+                Precision-engineered gravure cylinders built to reproduce every detail with consistency and accuracy.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 03 -->
+          <article class="capability-card">
+            <div class="capability-card-img-wrap">
+              <img 
+                src="harshita web img/file_000000007d0c81faa81dbd9de9223f3a.png" 
+                alt="High speed gravure printing press producing vibrant flexible packaging film" 
+                class="capability-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="capability-card-body">
+              <h3 class="capability-card-title">03 Gravure Printing</h3>
+              <p class="capability-card-desc">
+                Turning refined artwork into striking packaging with rich color, crisp detail and consistent print quality.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- =======================================================================
+             5. Six-Step Process Flow
+             ======================================================================= -->
+        <div class="process-flow-section" aria-label="Process Flow">
+          <div class="process-steps-container">
+            <!-- Step 1 -->
+            <div class="process-step-item">
+              <div class="process-thumb-wrap">
+                <img src="harshita web img/1790417680447.png" alt="Client requirements handshake" class="process-thumb-img" loading="lazy">
+              </div>
+              <h4 class="process-step-title">01 Brief</h4>
+              <p class="process-step-subtitle">Client<br>Requirements</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="process-step-item">
+              <div class="process-thumb-wrap">
+                <img src="harshita web img/1790417577541.png" alt="Packaging artwork design stage" class="process-thumb-img" loading="lazy">
+              </div>
+              <h4 class="process-step-title">02 Design</h4>
+              <p class="process-step-subtitle">Packaging<br>Artwork</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="process-step-item">
+              <div class="process-thumb-wrap">
+                <img src="harshita web img/1790417634535.png" alt="Client signing final artwork approval" class="process-thumb-img" loading="lazy">
+              </div>
+              <h4 class="process-step-title">03 Approval</h4>
+              <p class="process-step-subtitle">Final<br>Artwork</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="process-step-item">
+              <div class="process-thumb-wrap">
+                <img src="harshita web img/1790417823046.png" alt="Precision cylinder manufacturing" class="process-thumb-img" loading="lazy">
+              </div>
+              <h4 class="process-step-title">04 Cylinder</h4>
+              <p class="process-step-subtitle">Precision<br>Engraving</p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="process-step-item">
+              <div class="process-thumb-wrap">
+                <img src="harshita web img/1790417965234.png" alt="Rotogravure printing execution" class="process-thumb-img" loading="lazy">
+              </div>
+              <h4 class="process-step-title">05 Printing</h4>
+              <p class="process-step-subtitle">Gravure<br>Printing</p>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="process-step-item">
+              <div class="process-thumb-wrap">
+                <img src="harshita web img/1790418012241.png" alt="Finished packaging pouches" class="process-thumb-img" loading="lazy">
+              </div>
+              <h4 class="process-step-title">06 Packaging</h4>
+              <p class="process-step-subtitle">Finished<br>Packaging</p>
+            </div>
+          </div>
+
+          <!-- Right side printing photograph -->
+          <div class="process-right-image-card">
+            <img 
+              src="harshita web img/file_00000000e1b0820bb65d15d91239dddb.png" 
+              alt="Industrial rotogravure cylinder engraving in high precision production" 
+              class="process-right-img"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. Large Cinematic Feature Image Panels
+         ========================================================================= -->
+    <section class="cinematic-panels-wrapper" aria-label="Featured Panels">
+      <!-- Panel 1 - Packaging -->
+      <div class="cinematic-panel" id="panel-packaging">
+        <div class="cinematic-panel-bg">
+          <img 
+            src="harshita web img/file_000000009b6c8211b3d90a29d9bf7b48.png" 
+            alt="Finished luxury packaging products arranged in industrial setting"
+            loading="lazy"
+          >
+        </div>
+        <div class="cinematic-panel-overlay overlay-left"></div>
+        <div class="cinematic-content align-left">
+          <div class="cinematic-text-box">
+            <h2 class="cinematic-heading">Made for Packaging<br>That Gets Noticed.</h2>
+            <p class="cinematic-supporting">Premium packaging, powered by precision rotogravure.</p>
+            <a href="#projects" class="cinematic-arrow" aria-label="Explore packaging projects">&rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2 - Engraving -->
+      <div class="cinematic-panel" id="panel-engraving">
+        <div class="cinematic-panel-bg">
+          <img 
+            src="harshita web img/IMG_20260926_085414.png" 
+            alt="Detailed golden rotogravure cylinder with high precision engraving cells"
+            loading="lazy"
+          >
+        </div>
+        <div class="cinematic-panel-overlay overlay-right"></div>
+        <div class="cinematic-content align-right">
+          <div class="cinematic-text-box">
+            <p class="cinematic-eyebrow">THE ART OF ENGRAVING</p>
+            <h2 class="cinematic-heading">Precision in Every Detail.</h2>
+            <p class="cinematic-supporting">Fine engraving. Consistent cells. Superior print quality.</p>
+            <a href="#capabilities" class="cinematic-arrow" aria-label="Learn about engraving capabilities">&rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 3 - Printing -->
+      <div class="cinematic-panel" id="panel-printing">
+        <div class="cinematic-panel-bg">
+          <img 
+            src="harshita web img/file_00000000f21081f88078c60bd9411cc7.png" 
+            alt="Massive high-speed rotogravure printing press in full production"
+            loading="lazy"
+          >
+        </div>
+        <div class="cinematic-panel-overlay overlay-left"></div>
+        <div class="cinematic-content align-left">
+          <div class="cinematic-text-box">
+            <h2 class="cinematic-heading">Made for Packaging<br>That Gets Noticed.</h2>
+            <p class="cinematic-supporting">Premium packaging, powered by precision rotogravure.</p>
+            <a href="#facility" class="cinematic-arrow" aria-label="View our facility">&rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. Project / Packaging Gallery
+         ========================================================================= -->
+    <section id="projects" class="gallery-section" aria-label="Packaging Project Gallery">
+      <div class="container-wide">
+        <div class="gallery-mosaic-layout">
+          <!-- Left side 6x2 grid of 12 pouches -->
+          <div class="pouches-grid" aria-label="Product Packaging Array">
+            <div class="pouch-card">
+              <img src="harshita web img/1790485798944.png" alt="Coffee Take Away Mockup Packaging" class="pouch-img" loading="lazy">
+            </div>
+            <div class="pouch-card">
+              <img src="harshita web img/1790485805933.png" alt="Happy Chili Powder Pouch Packaging" class="pouch-img" loading="lazy">
+            </div>
+            <div class="pouch-card">
+              <img src="harshita web img/1790485813257.png" alt="Snack Packaging Pouch" class="pouch-img" loading="lazy">
+            </div>
+            <div class="pouch-card">
+              <img src="harshita web img/1790485819513.png" alt="Specialty Food Pouch" class="pouch-img" loading="lazy">
+            </div>
+            <div class="pouch-card">
+              <img src="harshita web img/1790485825756.png" alt="Organic Tea Pouch" class="pouch-img" loading="lazy">
+            </div>
+            <div class="pouch-card">
+              <img src="harshita web img/1790485831804.png" alt="Dry Fruits Pouch" class="pouch-img" loading="lazy">
+            </div>
+            <div class="pouch-card">
+              <img src="harshita web img/1790485837828.png" alt="Almonds & Nuts Pouch" class="pouch-img" loading="lazy">
+            </div>
+            <div class="pouch-card">
+              <img src="harshita web img/1790485843503.png" alt="Premium Dog Food Pouch" class="pouch-img" loading="lazy">
+            </div>
+            <div class="pouch-card">
+              <img src="harshita web img/1790485859168.png" alt="Natural Food Pouch" class="pouch-img" loading="lazy">
+            </div>
+            <div class="pouch-card">
+              <img src="harshita web img/1790485864746.png" alt="Spices Blend Pouch" class="pouch-img" loading="lazy">
+            </div>
+            <div class="pouch-card">
+              <img src="harshita web img/1790485876284.png" alt="Artisan Snacks Pouch" class="pouch-img" loading="lazy">
+            </div>
+            <div class="pouch-card">
+              <img src="harshita web img/1790485882719.png" alt="Coffee Arabica Blend Pouch" class="pouch-img" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Right side large showcase card -->
+          <div class="gallery-showcase-card">
+            <img 
+              src="harshita web img/file_000000003a1081fa96530adc065be817.png" 
+              alt="Rotogravure cylinders array and printed flexible pouches collection" 
+              class="gallery-showcase-img"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. Council / Leadership
+         ========================================================================= -->
+    <section id="council" class="council-section" aria-labelledby="council-heading">
+      <div class="container">
+        <div class="council-header">
+          <p class="section-eyebrow" data-bind="council.eyebrow">OUR LEADERSHIP</p>
+          <h2 id="council-heading" class="section-title" data-bind="council.heading">Our Council</h2>
+          <p class="section-body-text" style="margin: 0 auto;" data-bind="council.description">
+            Guided by a shared vision and a commitment to excellence, our council brings together experience, innovation and leadership to drive a stronger tomorrow.
+          </p>
+        </div>
+
+        <div class="council-cards-row">
+          <!-- Member 1 -->
+          <div class="council-card">
+            <div class="council-portrait-wrap">
+              <img src="harshita web img/IMG_20260928_212444.png" alt="Rajesh Sharma - Managing Director" class="council-portrait-img" loading="lazy">
+            </div>
+            <h3 class="council-card-name">Rajesh Sharma</h3>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="council-card">
+            <div class="council-portrait-wrap">
+              <img src="harshita web img/IMG_20260928_212529.png" alt="Vikram Mehta - Executive Director" class="council-portrait-img" loading="lazy">
+            </div>
+            <h3 class="council-card-name">Vikram Mehta</h3>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="council-card">
+            <div class="council-portrait-wrap">
+              <img src="harshita web img/IMG_20260928_212557.png" alt="Karthik Verma - Technical Director" class="council-portrait-img" loading="lazy">
+            </div>
+            <h3 class="council-card-name">Karthik Verma</h3>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="council-card">
+            <div class="council-portrait-wrap">
+              <img src="harshita web img/IMG_20260928_212618.png" alt="Ananya Singhania - Operations Director" class="council-portrait-img" loading="lazy">
+            </div>
+            <h3 class="council-card-name">Ananya Singhania</h3>
+          </div>
+
+          <!-- Member 5 -->
+          <div class="council-card">
+            <div class="council-portrait-wrap">
+              <img src="harshita web img/IMG_20260928_212645.png" alt="Pooja Reddy - Director of Quality & R&D" class="council-portrait-img" loading="lazy">
+            </div>
+            <h3 class="council-card-name">Pooja Reddy</h3>
+          </div>
+        </div>
+
+        <p class="council-tagline" data-bind="council.tagline">Five voices. One shared vision.</p>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. Facility / Factory
+         ========================================================================= -->
+    <section id="facility" class="facility-section" aria-labelledby="facility-heading">
+      <div class="container-wide">
+        <div class="facility-grid">
+          <div class="facility-image-card">
+            <img 
+              src="harshita web img/file_000000009a3081fabf57928df05c5ddd.png" 
+              alt="State of the art manufacturing and operations facility" 
+              class="facility-img"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="facility-content">
+            <p class="section-eyebrow" style="color: var(--gold-accent);" data-bind="facility.eyebrow">OUR FACILITY</p>
+            <h2 id="facility-heading" class="section-title" data-bind="facility.heading">Corporate &amp; Manufacturing Facility</h2>
+            <p class="section-body-text" data-bind="facility.description">
+              We operate modern manufacturing infrastructure equipped with advanced rotogravure cylinder engraving technology to ensure premium quality flexible packaging solutions.
+            </p>
+
+            <div class="facility-info-blocks">
+              <div class="info-block">
+                <p class="info-block-label" data-bind="facility.block1Label">REGISTERED OFFICE &amp; HQ</p>
+                <p class="info-block-value" data-bind="facility.block1Value" data-bind-type="html">Plot No. 00, Phase-I, Industrial Corridor,<br>[Industrial Zone Name], [City Name], [State Name] [PIN Code]</p>
+              </div>
+
+              <div class="info-block">
+                <p class="info-block-label" data-bind="facility.block2Label">CORPORATE IDENTITY (CIN)</p>
+                <p class="info-block-value" style="font-size: 1.05rem; font-weight: 700; color: #1A1A18;" data-bind="facility.block2Value" data-bind-type="html">U00000XX2024PTC000000<span style="display:block; font-size: 0.8rem; font-weight: 500; color: #6B665E; margin-top: 4px;">Active Private Limited Entity (RoC [State / Region])</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         10. Contact Section & Interactive Satellite Map
+         ========================================================================= -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container-wide">
+        <div class="contact-grid">
+          <!-- Left side contact information -->
+          <div class="contact-card-left">
+            <p class="contact-eyebrow">GET IN TOUCH</p>
+            <h2 id="contact-heading" class="contact-title">Contact Us</h2>
+            <p class="contact-intro">
+              We're here to help! Reach out to us for any inquiries, partnership opportunities, or support.
+            </p>
+
+            <div class="contact-detail-items">
+              <!-- Phone -->
+              <div class="contact-item">
+                <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <div class="contact-item-text">
+                  <strong style="display:block; font-size: 0.76rem; letter-spacing: 0.1em; color: #8C867B; text-transform: uppercase;">PHONE</strong>
+                  <a href="tel:+910000000000" style="color: var(--gold-accent); font-weight: 600; font-size: 1.05rem;" data-bind="contact.primaryPhone">+91 00000 00000</a>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-item">
+                <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <div class="contact-item-text">
+                  <strong style="display:block; font-size: 0.76rem; letter-spacing: 0.1em; color: #8C867B; text-transform: uppercase;">EMAIL</strong>
+                  <a href="mailto:contact@companydomain.com" style="color: var(--gold-accent); font-weight: 600; font-size: 1.05rem;" data-bind="contact.primaryEmail">contact@companydomain.com</a>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="contact-item">
+                <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div class="contact-item-text">
+                  <strong style="display:block; font-size: 0.76rem; letter-spacing: 0.1em; color: #8C867B; text-transform: uppercase;">REGISTERED OFFICE</strong>
+                  <span data-bind="contact.registeredOffice.full">Plot No. 00, Phase-I, Industrial Corridor, [Industrial Zone Name], [City Name], [State Name] – [PIN Code], [Country]</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp Functional Button -->
+            <a 
+              href="https://wa.me/910000000000?text=Hello%20%5BCompany%20Name%5D%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="whatsapp-cta-btn"
+              aria-label="Chat on WhatsApp"
+            >
+              <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>Chat on WhatsApp &rarr;</span>
+            </a>
+          </div>
+
+          <!-- Right side Interactive Satellite Map -->
+          <div class="map-card-right">
+            <div class="map-floating-label">
+              <span class="map-label-dot"></span>
+              <div>
+                <span class="map-label-title">[Registered Facility]</span>
+                <span class="map-label-sub"> &bull; [City], [State]</span>
+              </div>
+            </div>
+            <!-- Leaflet Container -->
+            <div id="factory-map" role="region" aria-label="Interactive Satellite Map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-wide">
+      <div class="footer-top-grid">
+        <!-- Brand column -->
+        <div class="footer-brand-col">
+          <div class="footer-brand-header">
+            <img src="svg/brand-logo.svg" alt="Company Logo" class="footer-brand-logo">
+            <span class="footer-brand-name">APEX<br>GRAVURES</span>
+          </div>
+          <p class="footer-brand-desc" data-bind="company.description">
+            Specialized in precision rotogravure cylinder manufacturing, engraving solutions, and high-performance flexible packaging services.
+          </p>
+          <div class="footer-social-icons">
+            <!-- Phone -->
+            <a href="tel:+910000000000" class="social-icon-btn" aria-label="Phone: +91 00000 00000" title="Phone">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </a>
+            <!-- Email -->
+            <a href="mailto:contact@companydomain.com" class="social-icon-btn" aria-label="Email: contact@companydomain.com" title="Email">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/company/companydomain" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com/companydomain" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram" title="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Services column -->
+        <div class="footer-col">
+          <p class="footer-col-title">SERVICES</p>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#capabilities">Packaging Design</a></li>
+            <li class="footer-link-item"><a href="#capabilities">Precision Cylinders</a></li>
+            <li class="footer-link-item"><a href="#capabilities">Gravure Printing</a></li>
+            <li class="footer-link-item"><a href="#capabilities">Printing Solutions</a></li>
+          </ul>
+        </div>
+
+        <!-- Company column -->
+        <div class="footer-col">
+          <p class="footer-col-title">COMPANY</p>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#about">About Us</a></li>
+            <li class="footer-link-item"><a href="#capabilities">Our Process</a></li>
+            <li class="footer-link-item"><a href="#projects">Gallery</a></li>
+            <li class="footer-link-item"><a href="#contact">Careers</a></li>
+            <li class="footer-link-item"><a href="#contact">Contact</a></li>
+            <li class="footer-link-item"><a href="javascript:void(0)" class="footer-terms-trigger">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact column -->
+        <div class="footer-col">
+          <p class="footer-col-title">CONTACT</p>
+          <div class="footer-contact-info">
+            <p>Plot No. 00, Phase-I,<br>[Industrial Zone Name], [City Name],<br>[State Name] [PIN Code]</p>
+            <p><a href="tel:+910000000000" data-bind="contact.primaryPhone">+91 00000 00000</a></p>
+            <p><a href="mailto:contact@companydomain.com" data-bind="contact.primaryEmail">contact@companydomain.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom-bar">
+        <span>&copy; 2024&ndash;2026 [COMPANY NAME] PRIVATE LIMITED (CIN: U00000XX2024PTC000000). All Rights Reserved.</span>
+        <span><a href="javascript:void(0)" class="footer-terms-trigger terms-bottom-link">Terms &amp; Conditions</a> &bull; Rotogravure &bull; Cylinder Manufacturing</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Terms & Conditions B2B Modal (Requirement 4)
+       ========================================================================= -->
+  <div id="terms-modal" class="modal-backdrop" style="display: none;" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="terms-modal-title">
+    <div class="modal-content-card">
+      <div class="modal-header" style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; border-bottom:1px solid rgba(255,255,255,0.08); padding-bottom:12px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DFB76C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <h3 id="terms-modal-title" class="modal-title" style="margin:0; font-size:1.05rem; font-weight:600; color:#FFFFFF;">Terms &amp; Conditions</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="close-terms-btn" aria-label="Close Terms &amp; Conditions popup" style="background:transparent; border:none; color:rgba(255,255,255,0.65); font-size:1.6rem; line-height:1; cursor:pointer; padding:0 4px;">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-quote-box">
+          <p class="modal-message">&ldquo;This is a B2B website created to represent and showcase the company and its services.&rdquo;</p>
+        </div>
+        <div class="modal-badge">
+          <span data-bind="company.legalName">[COMPANY NAME] PRIVATE LIMITED</span>
+          <span class="badge-sub">CIN: U00000XX2024PTC000000 &bull; RoC [State / Region]</span>
+        </div>
+      </div>
+      <div class="modal-footer" style="display:flex; justify-content:flex-end;">
+        <button type="button" class="modal-btn-confirm" id="confirm-terms-btn">Understood &amp; Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Configuration and Logic -->
+  <script src="js/companyData.js?v=20260930_2"></script>
+  <script src="js/main.js?v=20260930_2"></script>
+</body>
+</html>
