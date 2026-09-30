@@ -19,7 +19,7 @@ const COMPANY_DATA = {
   company: {
     legalName: "[COMPANY NAME] PRIVATE LIMITED",
     shortName: "[COMPANY NAME]",
-    brandTitleMain: "APEX",
+    brandTitleMain: "Demo",
     brandTitleSub: "GRAVURES PRIVATE LIMITED",
     cin: "U00000XX2024PTC000000",
     roc: "RoC [State / Region]",
