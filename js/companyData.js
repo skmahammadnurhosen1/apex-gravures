@@ -17,18 +17,19 @@
 const COMPANY_DATA = {
   // 1. Company Identity & Branding
   company: {
-    legalName: "[COMPANY NAME] PRIVATE LIMITED",
-    shortName: "[COMPANY NAME]",
-    brandTitleMain: "Demo",
+    legalName: "Demo Gravures Private Limited",
+    shortName: "Demo Gravures",
+    brandTitleMain: "DEMO",
     brandTitleSub: "GRAVURES PRIVATE LIMITED",
-    cin: "U00000XX2024PTC000000",
-    roc: "RoC [State / Region]",
+    cin: "U32900TG2024PTC000000",
+    roc: "RoC Hyderabad",
     incorporationDate: "May 9, 2024",
-    entityStatus: "Active Private Limited Entity (RoC [State / Region])",
-    tagline: "Precision Behind Every Impression.",
+    entityStatus: "Active Private Limited Entity (RoC Hyderabad)",
+    tagline: "Rotogravure Cylinder Manufacturing & Packaging Demo Showcase",
     description: "Specialized in precision rotogravure cylinder manufacturing, engraving solutions, and high-performance flexible packaging services.",
+    websiteUrl: "https://demo-gravures.web.app",
     logo: "svg/brand-logo.svg",
-    bottomTagline: "Rotogravure • Cylinder Manufacturing • Packaging",
+    bottomTagline: "Rotogravure • Cylinder Manufacturing • Packaging Demo Showcase",
     bottomCommitment: "Let’s build better packaging together.",
     copyrightYear: "2024–2026"
   },
@@ -47,23 +48,23 @@ const COMPANY_DATA = {
   contact: {
     primaryPhone: "+91 00000 00000",
     primaryPhoneLink: "tel:+910000000000",
-    primaryEmail: "contact@companydomain.com",
-    primaryEmailLink: "mailto:contact@companydomain.com",
+    primaryEmail: "contact@demogravures.com",
+    primaryEmailLink: "mailto:contact@demogravures.com",
     
     // Standardized Demo Placeholder Address
     registeredOffice: {
-      line1: "Plot No. 00, Phase-I, Industrial Corridor,",
-      line2: "[Industrial Zone Name], [City Name],",
-      city: "[City Name]",
-      state: "[State Name]",
-      postalCode: "[PIN Code]",
-      country: "[Country]",
-      full: "Plot No. 00, Phase-I, Industrial Corridor, [Industrial Zone Name], [City Name], [State Name] – [PIN Code], [Country]"
+      line1: "Plot 42, Phase-II, Industrial Corridor,",
+      line2: "Industrial Estate, Sanathnagar, Hyderabad,",
+      city: "Hyderabad",
+      state: "Telangana",
+      postalCode: "500001",
+      country: "India",
+      full: "Plot 42, Phase-II, Industrial Corridor, Industrial Estate, Sanathnagar, Hyderabad, Telangana – 500001, India"
     },
     
     // WhatsApp Configuration with Dynamic Message Construction
     whatsappNumber: "910000000000",
-    whatsappMessage: "Hello [Company Name], I would like to inquire about your rotogravure cylinders and packaging solutions.",
+    whatsappMessage: "Hello Demo Gravures, I would like to inquire about your rotogravure cylinders and packaging solutions.",
     get whatsappUrl() {
       return `https://wa.me/${this.whatsappNumber}?text=${encodeURIComponent(this.whatsappMessage)}`;
     }
@@ -72,11 +73,11 @@ const COMPANY_DATA = {
   // 4. Social Links & Digital Handles
   socialLinks: [
     { name: "Phone", icon: "phone", url: "tel:+910000000000" },
-    { name: "Email", icon: "email", url: "mailto:contact@companydomain.com" },
-    { name: "LinkedIn", icon: "linkedin", url: "https://linkedin.com/company/companydomain" },
-    { name: "X", icon: "x", url: "https://x.com/companydomain" },
-    { name: "Instagram", icon: "instagram", url: "https://instagram.com/companydomain" },
-    { name: "YouTube", icon: "youtube", url: "https://youtube.com/@companydomain" }
+    { name: "Email", icon: "email", url: "mailto:contact@demogravures.com" },
+    { name: "LinkedIn", icon: "linkedin", url: "https://linkedin.com/company/demogravures" },
+    { name: "X", icon: "x", url: "https://x.com/demogravures" },
+    { name: "Instagram", icon: "instagram", url: "https://instagram.com/demogravures" },
+    { name: "YouTube", icon: "youtube", url: "https://youtube.com/@demogravures" }
   ],
 
   // 5. Leaflet Interactive Satellite Map Configuration (Standardized Demo Coordinates)
@@ -84,8 +85,8 @@ const COMPANY_DATA = {
     lat: 17.4560,
     lng: 78.4380,
     zoom: 16,
-    locationLabel: "[COMPANY NAME] PRIVATE LIMITED",
-    addressLabel: "[Industrial Zone], [City], [State]",
+    locationLabel: "Demo Gravures Private Limited",
+    addressLabel: "Industrial Estate, Hyderabad, Telangana",
     satelliteTilesUrl: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     satelliteAttribution: "Tiles &copy; Esri &mdash; Satellite Imagery"
   },
@@ -279,9 +280,9 @@ const COMPANY_DATA = {
     description: "Operating modern manufacturing infrastructure equipped with advanced rotogravure cylinder engraving technology to ensure premium quality flexible packaging solutions.",
     image: "harshita web img/file_000000009a3081fabf57928df05c5ddd.png",
     block1Label: "REGISTERED OFFICE & HQ",
-    block1Value: "Plot No. 00, Phase-I, Industrial Corridor,<br>[Industrial Zone Name], [City Name], [State Name] [PIN Code]",
+    block1Value: "Plot 42, Phase-II, Industrial Corridor,<br>Industrial Estate, Sanathnagar, Hyderabad, Telangana 500001",
     block2Label: "CORPORATE IDENTITY (CIN)",
-    block2Value: "U00000XX2024PTC000000<span style=\"display:block; font-size: 0.8rem; font-weight: 500; color: #6B665E; margin-top: 4px;\">Active Private Limited Entity (RoC [State / Region])</span>"
+    block2Value: "U32900TG2024PTC000000<span style=\"display:block; font-size: 0.8rem; font-weight: 500; color: #6B665E; margin-top: 4px;\">Active Private Limited Entity (RoC Hyderabad)</span>"
   },
 
   // 15. Footer Columns & Links

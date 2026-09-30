@@ -245,13 +245,13 @@ function initSatelliteMap() {
     lat: 17.4560,
     lng: 78.4380,
     zoom: 16,
-    locationLabel: "APEX GRAVURES PRIVATE LIMITED",
+    locationLabel: "DEMO GRAVURES PRIVATE LIMITED",
     addressLabel: "Industrial Estate, Hyderabad, Telangana",
     satelliteTilesUrl: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     satelliteAttribution: "Tiles &copy; Esri &mdash; Satellite Imagery"
   };
 
-  const legalName = (data.company && data.company.legalName) || "APEX GRAVURES PRIVATE LIMITED";
+  const legalName = (data.company && data.company.legalName) || "DEMO GRAVURES PRIVATE LIMITED";
   const address = (data.contact && data.contact.registeredOffice) ? data.contact.registeredOffice : {
     line1: "Plot 42, Phase-II,",
     line2: "Industrial Estate, Sanathnagar,",

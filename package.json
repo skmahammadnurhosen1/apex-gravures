@@ -1,0 +1,20 @@
+{
+  "name": "demo-gravures",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo Gravures Private Limited - Rotogravure Cylinder Manufacturing & Packaging Demo Showcase",
+  "homepage": "https://demo-gravures.web.app",
+  "scripts": {
+    "deploy": "firebase deploy --only hosting"
+  },
+  "keywords": [
+    "rotogravure",
+    "cylinders",
+    "packaging",
+    "demo-gravures",
+    "engraving",
+    "flexible-packaging"
+  ],
+  "author": "Demo Gravures Private Limited",
+  "license": "UNLICENSED"
+}
